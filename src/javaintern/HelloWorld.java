@@ -1,20 +1,19 @@
 package javaintern;
 
-import java.util.Scanner;
-
 public class HelloWorld {
 	public static void main(String[] args) {
-//		int a = 6;
-//		int b = 9;
-//		int c = Math.max(6, 9);
-//		System.out.println("Max = " + c);
+		String[] clubs = { "Barca", "Real", "MU", "MC" };
+//		clubs[0] = "Miami";
+//		System.out.println(">>> Check " + clubs[0]);
+//		System.out.println(">>> Check " + clubs[1]);
+//		System.out.println(">>> Check " + clubs[2]);
+//		String[] a = new String[6];
+//		a[0] = "1";
+//		System.out.println(">>> Check " + a[1]);
+		for (int i = 0; i < clubs.length; i++) {
+			System.out.println(clubs[i]);
 
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("First Number : ");
-		int firstNumber = scanner.nextInt();
-		System.out.println("Second Number : ");
-		int secondNumber = scanner.nextInt();
-		System.out.println("Min is : " + Math.min(firstNumber, secondNumber));
-		scanner.close();
+		}
+
 	}
 }
