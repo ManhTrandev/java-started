@@ -1,19 +1,21 @@
 package javaintern;
 
+import java.util.Arrays;
+
 public class HelloWorld {
 	public static void main(String[] args) {
-		String[] clubs = { "Barca", "Real", "MU", "MC" };
-//		clubs[0] = "Miami";
-//		System.out.println(">>> Check " + clubs[0]);
-//		System.out.println(">>> Check " + clubs[1]);
-//		System.out.println(">>> Check " + clubs[2]);
-//		String[] a = new String[6];
-//		a[0] = "1";
-//		System.out.println(">>> Check " + a[1]);
-		for (int i = 0; i < clubs.length; i++) {
-			System.out.println(clubs[i]);
-
+		int[] clubs = { 5, 20, 40, 3 };
+//		Arrays.sort(clubs);
+		for (int i = 0; i < clubs.length - 1; i++) {
+			for (int j = i + 1; j < clubs.length; j++) {
+				if (clubs[i] < clubs[j]) {
+					int temp = clubs[i];
+					clubs[i] = clubs[j];
+					clubs[j] = temp;
+				}
+			}
 		}
+		System.out.println(Arrays.toString(clubs));
 
 	}
 }
