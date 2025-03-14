@@ -1,10 +1,27 @@
+//Tạo 3 class:
+//- SinhVien (super class)
+//+ getDiem (phương thức trừu tượng)
+//- SinhVienIT (child class)
+//+ scoreJava : double
+//+ scoreHTML : double
+//getDiem = (scoreJava * 2 + scoreHTML)/3;
+//
+//- SinhVienCoKhi (child class)
+//+ scoreCNC : double
+//+ scorePLC : double
+//getDiem = (scoreCNC + scorePLC)/2;
+
 package chapter7;
 
-public class SinhVien {
+public abstract class SinhVien {
 	protected String id;
 	protected String name;
 	protected double price;
 	protected double tax;
+
+	abstract void tinhDiem();
+
+	// abstract void getDiem();
 
 	public double getPriceTax() {
 		return this.price * this.tax;
