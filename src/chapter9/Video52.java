@@ -22,7 +22,7 @@ public class Video52 {
 				scanner.next();
 				System.out.println("Run error");
 			}
-//		scanner.close();
+			scanner.close();
 		}
 	}
 }
